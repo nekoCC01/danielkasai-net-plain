@@ -1,0 +1,59 @@
+
+/***********************************************************************************************************************
+* Utility classes
+***********************************************************************************************************************/
+
+/* as recommended here: https://every-layout.dev/rudiments/global-and-local-styling/ */
+
+
+/*
+content that is hidden from sighted users
+but can contain additional information for screen readers
+(other than with display: none -> will not be taken out of the DOM)
+
+--> DK-Labs: public/assets/css/powell-design-system.css
+
+ */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
+
+.no-list {
+    list-style: none;
+}
+
+/***********************************************************************************************************************
+* Font Sizes
+
+-> See: https://every-layout.dev/rudiments/global-and-local-styling/
+***********************************************************************************************************************/
+
+
+/* ↓ Backslash to escape the colon */
+.font-size\:bigger {
+    font-size: var(--s1);
+}
+
+
+/***********************************************************************************************************************
+* Scroll Snapping
+***********************************************************************************************************************/
+
+.scroll-snap-container {
+    scroll-snap-type: y mandatory;
+}
+.scroll-snap-container > * {
+    scroll-snap-align: start;
+}
+
+
+
+
