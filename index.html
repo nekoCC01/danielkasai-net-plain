@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhilosophyWeb - East/West</title>
+
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/00_normalize.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/01_variables.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/02_every_layout.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/03_utility.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/main.css">
+
+    <!-- Every Layout Components -->
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/every-layout/all.css">
+    <script type="module" src="/danielkasai-net-plain/styles/every-layout/all.js"></script>
+
+    <!-- @stack('styles') -->
+
+    <!-- @stack('head-scripts') -->
+
+</head>
+
+<body>
+
+<header>
+    <box-l borderWidth="0" padding="var(--s-1)" class="bg-clr:turquoise-dark clr:white">
+        <div class="layout__content">
+            <a class="clr:white" href="mailto:mail@danielkasai.net">mail@danielkasai.net</a>
+        </div>
+    </box-l>
+    <box-l borderWidth="0" id="header__main" padding="var(--s0)">
+        <cluster-l justify="space-between" align="center">
+            <a href="/">
+                <img id="header__logo" src="/danielkasai-net-plain/img/header__logo.png" alt="">
+            </a>
+
+            <cluster-l role="list" justify="flex-start" space="var(--s0)">
+                <div role="listitem">
+                    <a href="/">Home</a>
+                </div>
+                <div role="listitem">
+                    <a href="/vita">Vita</a>
+                </div>
+                <div role="listitem">
+                    <a href="/portfolio">Portfolio</a>
+                </div>
+                <div role="listitem">
+                    <a href="/impressum">Impressum</a>
+                </div>
+            </cluster-l>
+        </cluster-l>
+    </box-l>
+</header>
+
+<main id="home__index">
+
+    <box-l borderWidth="0" id="index__title" class="bg-clr:turquoise-dark">
+        <h1>
+            <span>individuelle</span><br>
+            Webgestaltung
+        </h1>
+    </box-l>
+
+    <section class="section__parallax" style="margin-top: -23px;">
+        <div class="section__parallax-img-container">
+            <img src="/danielkasai-net-plain/img/index__parallax.png" alt="">
+        </div>
+
+    </section>
+    <section id="index__hello">
+        <switcher-l limit="2" class="layout__content">
+            <div id="index__hello-img" style="max-inline-size: 100%;">
+                <img src="/danielkasai-net-plain/img/index__intro.png" alt="">
+            </div>
+
+            <stack-l>
+                <h2>Hallo!</h2>
+                <p>
+                    Mein Name ist Daniel Kasai. <br>
+                    Und ich freue mich darauf, Ihr individuelles Web-Projekt auf bestmöglichem Wege zum Leben zu erwecken.
+                    <br>
+                    Aufeinander abgestimmt und aus einer Hand:
+                </p>
+
+                <cluster-l align="center">
+                    <svg width="20px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle fill="hsl( var(--clr-turquoise-bright) )" cx="50" cy="50" r="50" />
+                    </svg>
+                    <div>Gute Aufbereitung und Erstellung der Inhalte</div>
+                </cluster-l>
+                <cluster-l align="center">
+                    <svg width="20px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle fill="hsl( var(--clr-turquoise-bright) )" cx="50" cy="50" r="50" />
+                    </svg>
+                    <div>adäquate Implementierung & Programmierung</div>
+                </cluster-l>
+                <cluster-l align="center">
+                    <svg width="20px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle fill="hsl( var(--clr-turquoise-bright) )" cx="50" cy="50" r="50" />
+                    </svg>
+                    <div>das kreative Extra</div>
+                </cluster-l>
+            </stack-l>
+
+        </switcher-l>
+    </section>
+
+    <section id="index__overview">
+        <switcher-l limit="3" class="layout__content">
+
+            <box-l>
+                <a href="/vita">
+                    <stack-l>
+                        <img src="/danielkasai-net-plain/img/index__overview-unihh.png" alt="">
+                        <div class="clr:darkest">
+                            <h3>Universität Hamburg & Tokyo</h3>
+                            <p>Medienkultur, Philosophie und Japanologie</p>
+                        </div>
+                    </stack-l>
+                </a>
+            </box-l>
+
+            <box-l>
+                <a href="/vita#vita__hes">
+                    <stack-l>
+                        <img src="/danielkasai-net-plain/img/index__overview-hes.png" alt="">
+                        <div class="clr:darkest">
+                            <h3>Web Technologies Certificate</h3>
+                            <p>Harvard Extension School</p>
+                        </div>
+                    </stack-l>
+                </a>
+            </box-l>
+
+            <box-l>
+                <a href="/portfolio">
+                    <stack-l>
+                        <img src="/danielkasai-net-plain/img/index__overview-illustration.png" alt="">
+                        <div class="clr:darkest">
+                            <h3>Illustration & Animation</h3>
+                            <p>Projektarbeit mit diversen Kunden</p>
+                        </div>
+                    </stack-l>
+                </a>
+
+            </box-l>
+        </switcher-l>
+    </section>
+    <section class="layout__content index__grid">
+        <h2 class="text-align:center">Kompetenzen</h2>
+        <grid-l min="22ch" space="var(--s1)">
+            <img src="/danielkasai-net-plain/img/index__skills-01-html-css-js.png" alt="">
+            <img src="/danielkasai-net-plain/img/index__skills-02-mysql-php.png" alt="">
+            <img src="/danielkasai-net-plain/img/index__skills-03-laravel.png" alt="">
+            <img src="/danielkasai-net-plain/img/index__skills-04-mean-stack.jpeg" alt="">
+            <img src="/danielkasai-net-plain/img/index__skills-05-creative-cloud.jpeg" alt="">
+            <img src="/danielkasai-net-plain/img/index__skills-06-p5-d3.png" alt="">
+            <img src="/danielkasai-net-plain/img/index__skills-07-wp-divi.png" alt="">
+            <img src="/danielkasai-net-plain/img/index__skills-08-bootstrap-jquery.png" alt="">
+        </grid-l>
+    </section>
+    <section class="layout__content index__grid">
+        <h2 class="text-align:center">Kunden</h2>
+        <grid-l min="22ch" space="var(--s1)">
+            <img src="/danielkasai-net-plain/img/index__customers-01-springer.png" alt="">
+            <img src="/danielkasai-net-plain/img/index__customers-02-funke.png" alt="">
+            <img src="/danielkasai-net-plain/img/index__customers-03-hoerzu.png" alt="">
+            <img src="/danielkasai-net-plain/img/index__customers-04-tvdigital.png" alt="">
+            <img src="/danielkasai-net-plain/img/index__customers-05-mkg.png" alt="">
+            <img src="/danielkasai-net-plain/img/index__customers-06-kulturschloss.png" alt="">
+            <img src="/danielkasai-net-plain/img/index__customers-07-brainery.png" alt="">
+            <img src="/danielkasai-net-plain/img/index__customers-08-diwemo.png" alt="">
+        </grid-l>
+    </section>
+    <section id="index__bottom" class="bg-clr:yellow">
+        <p class="layout__content text-align:center">
+            Eine Website ist Dokument, Prozess und Leinwand in einem. <br>
+
+            Als Dokument ist es gegliederte Information. <br>
+
+            Als Prozess besteht es aus interaktiver Request-Verarbeitung. <br>
+
+            Und als Leinwand kann es Kunstwerk sein. <br>
+
+            Gutes Webdesign ist daher die Verbindung dreier Traditionen – Text, Logik und Bild.
+        </p>
+    </section>
+
+
+</main>
+
+
+
+<footer class="bg-clr:darkest clr:white">
+    <section class="layout__content">
+        ©Copyright 2016 / All Rights Reserved <br><br>
+
+        IMPRESSUM: <br>
+        Daniel Kasai <br>
+        22335 Hamburg <br><br>
+
+        Tel.: 040 46777333 <br><br>
+
+        mail@danielkasai.net <br> <br>
+
+        Steuer ID Nr: 41763284096 <br>
+        Steuer Nr: 49/123/01384
+    </section>
+</footer>
+
+<script src="/danielkasai-net-plain/lib/greensock/gsap.min.js"></script>
+<script src="/danielkasai-net-plain/lib/greensock/ScrollTrigger.min.js"></script>
+
+<script src="/danielkasai-net-plain/js/parallax.js"></script>
+
+</body>
+</html>
