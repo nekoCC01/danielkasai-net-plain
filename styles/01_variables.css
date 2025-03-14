@@ -1,0 +1,93 @@
+
+
+:root {
+
+    --ratio: 1.5;
+    --s-5: calc(var(--s-4) / var(--ratio));
+    --s-4: calc(var(--s-3) / var(--ratio));
+    --s-3: calc(var(--s-2) / var(--ratio));
+    --s-2: calc(var(--s-1) / var(--ratio));
+    --s-1: calc(var(--s0) / var(--ratio));
+    --s0: 1rem;
+    --s1: calc(var(--s0) * var(--ratio));
+    --s2: calc(var(--s1) * var(--ratio));
+    --s3: calc(var(--s2) * var(--ratio));
+    --s4: calc(var(--s3) * var(--ratio));
+    --s5: calc(var(--s4) * var(--ratio));
+    --s6: calc(var(--s5) * var(--ratio));
+    --s7: calc(var(--s6) * var(--ratio));
+    --s8: calc(var(--s7) * var(--ratio));
+    --s9: calc(var(--s8) * var(--ratio));
+    --s10: calc(var(--s9) * var(--ratio));
+
+}
+
+
+/***********************************************************************************************************************
+* Variables, Basis Styles - Root
+***********************************************************************************************************************/
+
+/*
+From https://www.youtube.com/watch?v=lRaL-8qZ0mM&ab_channel=freeCodeCamp.org
+https://github.com/kevin-powell/space-tourism/blob/main/lesson-files/65/index.css
+ */
+:root {
+
+    /* Vgl. https://every-layout.dev/rudiments/axioms/ */
+    --measure: 60ch;
+
+    /* EXAMPLE CODE
+    !* colors *!
+    --clr-dark: 230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+
+    !* font-sizes *!
+    --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+    --fs-800: 3.5rem;
+    --fs-700: 1.5rem;
+    --fs-600: 1rem;
+    --fs-500: 1rem;
+    --fs-400: 0.9375rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    !* font-families *!
+    --ff-serif: "Montserrat", sans-serif;
+    --ff-sans-cond: "Montserrat", sans-serif;
+    --ff-sans-normal: "Montserrat", sans-serif;
+    */
+}
+
+
+/* EXAMPLE CODE
+@media (min-width: 35em) {
+    :root {
+        --fs-800: 5rem;
+        --fs-700: 2.5rem;
+        --fs-600: 1.5rem;
+        --fs-500: 1.25rem;
+        --fs-400: 1rem;
+    }
+}
+
+@media (min-width: 45em) {
+    :root {
+        !* font-sizes *!
+        --fs-800: 6.25rem;
+        --fs-700: 3.5rem;
+        --fs-600: 2rem;
+        --fs-500: 1.75rem;
+        --fs-400: 1.125rem;
+    }
+}
+*/
+
+/***********************************************************************************************************************
+* Colors
+***********************************************************************************************************************/
+
+
+:root {
+    --clr-beige: 44 44% 59%;
+}
