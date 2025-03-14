@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhilosophyWeb - East/West</title>
+
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/00_normalize.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/01_variables.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/02_every_layout.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/03_utility.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/main.css">
+
+    <!-- Every Layout Components -->
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/every-layout/all.css">
+    <script type="module" src="/danielkasai-net-plain/styles/every-layout/all.js"></script>
+
+    <!-- @stack('styles') -->
+
+    <!-- @stack('head-scripts') -->
+
+</head>
+
+<body>
+
+<header>
+    <box-l borderWidth="0" padding="var(--s-1)" class="bg-clr:turquoise-dark clr:white">
+        <div class="layout__content">
+            <a class="clr:white" href="mailto:mail@danielkasai.net">mail@danielkasai.net</a>
+        </div>
+    </box-l>
+    <box-l borderWidth="0" id="header__main" padding="var(--s0)">
+        <cluster-l justify="space-between" align="center">
+            <a href="/">
+                <img id="header__logo" src="/danielkasai-net-plain/img/header__logo.png" alt="">
+            </a>
+
+            <cluster-l role="list" justify="flex-start" space="var(--s0)">
+                <div role="listitem">
+                    <a href="/">Home</a>
+                </div>
+                <div role="listitem">
+                    <a href="/vita">Vita</a>
+                </div>
+                <div role="listitem">
+                    <a href="/portfolio">Portfolio</a>
+                </div>
+                <div role="listitem">
+                    <a href="/impressum">Impressum</a>
+                </div>
+            </cluster-l>
+        </cluster-l>
+    </box-l>
+</header>
+
+
+<section id="portfolio__projects-teaser" class="layout__content margin:bottom margin:top">
+    <grid-l min="22ch">
+        <a href="/portfolio/buchprojekt">
+            <stack-l>
+                <img src="/danielkasai-net-plain/img/portfolio__teaser-wandsbek.png" alt="">
+                <h3>Buchprojekt - Visualisierte Geschichte</h3>
+            </stack-l>
+        </a>
+        <a href="/portfolio/mkg">
+            <stack-l>
+                <img src="/danielkasai-net-plain/img/portfolio__teaser-mkg.png" alt="">
+                <h3>Animation "Hokusai Manga"</h3>
+            </stack-l>
+        </a>
+        <a href="/portfolio/infografik">
+            <stack-l>
+                <img src="/danielkasai-net-plain/img/portfolio__teaser-infografik.png" alt="">
+                <h3>Infografiken</h3>
+            </stack-l>
+        </a>
+        <a href="/portfolio/illustration">
+            <stack-l>
+                <img src="/danielkasai-net-plain/img/portfolio__teaser-illustration.png" alt="">
+                <h3>Illustrationen</h3>
+            </stack-l>
+        </a>
+        <a href="/portfolio/web-storytelling">
+            <stack-l>
+                <img src="/danielkasai-net-plain/img/portfolio__teaser-web-storytelling.png" alt="">
+                <h3>Web-Storytelling</h3>
+            </stack-l>
+        </a>
+        <a href="/portfolio/datenvisualisierung">
+            <stack-l>
+                <img src="/danielkasai-net-plain/img/portfolio__teaser-datenvisualisierung.png" alt="">
+                <h3>Datenvisualisierung</h3>
+            </stack-l>
+        </a>
+    </grid-l>
+</section>
+
+
+
+
+
+<footer class="bg-clr:darkest clr:white">
+    <section class="layout__content">
+        ©Copyright 2016 / All Rights Reserved <br><br>
+
+        IMPRESSUM: <br>
+        Daniel Kasai <br>
+        22335 Hamburg <br><br>
+
+        Tel.: 040 46777333 <br><br>
+
+        mail@danielkasai.net <br> <br>
+
+        Steuer ID Nr: 41763284096 <br>
+        Steuer Nr: 49/123/01384
+    </section>
+</footer>
+
+<script src="/danielkasai-net-plain/lib/greensock/gsap.min.js"></script>
+<script src="/danielkasai-net-plain/lib/greensock/ScrollTrigger.min.js"></script>
+
+
+</body>
+</html>

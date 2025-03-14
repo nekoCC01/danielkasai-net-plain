@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhilosophyWeb - East/West</title>
+
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/00_normalize.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/01_variables.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/02_every_layout.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/03_utility.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/main.css">
+
+    <!-- Every Layout Components -->
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/every-layout/all.css">
+    <script type="module" src="/danielkasai-net-plain/styles/every-layout/all.js"></script>
+
+    <!-- @stack('styles') -->
+
+    <!-- @stack('head-scripts') -->
+
+</head>
+
+<body>
+
+<header>
+    <box-l borderWidth="0" padding="var(--s-1)" class="bg-clr:turquoise-dark clr:white">
+        <div class="layout__content">
+            <a class="clr:white" href="mailto:mail@danielkasai.net">mail@danielkasai.net</a>
+        </div>
+    </box-l>
+    <box-l borderWidth="0" id="header__main" padding="var(--s0)">
+        <cluster-l justify="space-between" align="center">
+            <a href="/">
+                <img id="header__logo" src="/danielkasai-net-plain/img/header__logo.png" alt="">
+            </a>
+
+            <cluster-l role="list" justify="flex-start" space="var(--s0)">
+                <div role="listitem">
+                    <a href="/">Home</a>
+                </div>
+                <div role="listitem">
+                    <a href="/vita">Vita</a>
+                </div>
+                <div role="listitem">
+                    <a href="/portfolio">Portfolio</a>
+                </div>
+                <div role="listitem">
+                    <a href="/impressum">Impressum</a>
+                </div>
+            </cluster-l>
+        </cluster-l>
+    </box-l>
+</header>
+
+
+<section class="layout__content bg-clr:yellow text-align:center">
+    <p>
+        Einige meiner Kundenaufträge, insbesondere für die <strong>Axel Springer AG</strong> und die <strong>Funke Medien Verlagsgruppe</strong>, befassten sich mit der Visualisierung von Datenbeständen. Ziel war jeweils, ein Interface zu schaffen, welches auf den schnellen Blick eine Einsicht in die Qualitätsentwicklung der Daten erlaubt.
+    </p>
+</section>
+
+<section>
+    <switcher-l limit="3" class="layout__content">
+        <box-l>
+            <stack-l>
+                <img src="/danielkasai-net-plain/img/portfolio-datenvisualisierung__datenbank.png" alt="">
+                <div class="text-align:center">
+                    <p>
+                        Grundlegend war immer eine Reihe von SQL-Selektionen, die die gewünschten Datensichten erzeugen. Teilweise wurden diese in Cronjobs eingebunden, so dass man die Ergebnisse langfristig speichern und verfolgen kann.
+                    </p>
+                </div>
+            </stack-l>
+        </box-l>
+        <box-l>
+            <stack-l>
+                <img src="/danielkasai-net-plain/img/portfolio-datenvisualisierung__aufbereitung.png" alt="">
+                <div class="text-align:center">
+                    <p>
+                        PHP übernimmt dann die Aufgabe, die Daten aufzubereiten, Schlüsse daraus zu ziehen und in der passenden Struktur an die Visualisierungsbibliotheken weiter zu geben.
+                        Zudem werden die Template-Ausgaben vorbereitet.
+                    </p>
+                </div>
+            </stack-l>
+        </box-l>
+        <box-l>
+            <stack-l>
+                <img src="/danielkasai-net-plain/img/portfolio-datenvisualisierung__frontend.png" alt="">
+                <div class="text-align:center">
+                    <p>
+                        Die letzte Schicht bildet das Frontend, mitsamt dem Code der Visualisierungsbibliothek. Hier werden die Daten innerhalb definierter Skalen in Vektorgrafiken oder CSS-formatierte Div-Elemente umgewandelt.
+                    </p>
+                </div>
+            </stack-l>
+        </box-l>
+    </switcher-l>
+</section>
+
+<section class="layout__content bg-clr:turquoise-bright text-align:center">
+    <h2>Visualisierungsbibliotheken</h2>
+</section>
+
+<section>
+    <switcher-l limit="2" class="layout__content">
+        <box-l>
+            <stack-l>
+                <img src="/danielkasai-net-plain/img/portfolio-datenvisualisierung__amcharts.png" alt="">
+                <div class="text-align:center">
+                    <p>
+                        <a href="https://www.amcharts.com/">AmCharts</a>
+                        eignet sich gut für schnelle Visualisierungen. Es gibt eine Reihe von auf Codepen.io gehosteten Beispielen, die gut als Ausgangsbasis verwendet werden können. Ich hab diese Bibliothek insbesondere für Line- und Pie-Charts verwendet.
+                    </p>
+                </div>
+            </stack-l>
+        </box-l>
+        <box-l>
+            <stack-l>
+                <img src="/danielkasai-net-plain/img/portfolio-datenvisualisierung__d3.png" alt="">
+                <div class="text-align:center">
+                    <p>
+                        <a href="https://d3js.org/">D3.js</a>
+                        hab ich für komplexere Anwendungsfälle genutzt. Hier braucht es eine gewisse Phase der Einübung, um die grundlegende Syntax zu beherrschen. Dann aber sind sehr individuelle Ausgestaltungen und Formen von Visualisierungen möglich. Bei meinen Aufträgen hab ich D3 insbesondere für Heatmaps als auch für hierarchisierte Aufgliederung von Datenbeständen genutzt.
+                    </p>
+                </div>
+            </stack-l>
+        </box-l>
+    </switcher-l>
+    <switcher-l limit="2" class="layout__content">
+        <box-l>
+            <img src="/danielkasai-net-plain/img/portfolio-datenvisualisierung__amcharts-bsp.png" alt="">
+        </box-l>
+        <box-l>
+            <img src="/danielkasai-net-plain/img/portfolio-datenvisualisierung__d3-bsp.png" alt="">
+        </box-l>
+    </switcher-l>
+</section>
+
+
+
+<footer class="bg-clr:darkest clr:white">
+    <section class="layout__content">
+        ©Copyright 2016 / All Rights Reserved <br><br>
+
+        IMPRESSUM: <br>
+        Daniel Kasai <br>
+        22335 Hamburg <br><br>
+
+        Tel.: 040 46777333 <br><br>
+
+        mail@danielkasai.net <br> <br>
+
+        Steuer ID Nr: 41763284096 <br>
+        Steuer Nr: 49/123/01384
+    </section>
+</footer>
+
+<script src="/danielkasai-net-plain/lib/greensock/gsap.min.js"></script>
+<script src="/danielkasai-net-plain/lib/greensock/ScrollTrigger.min.js"></script>
+
+
+</body>
+</html>

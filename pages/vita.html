@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhilosophyWeb - East/West</title>
+
+  <link rel="stylesheet" href="/danielkasai-net-plain/styles/00_normalize.css">
+  <link rel="stylesheet" href="/danielkasai-net-plain/styles/01_variables.css">
+  <link rel="stylesheet" href="/danielkasai-net-plain/styles/02_every_layout.css">
+  <link rel="stylesheet" href="/danielkasai-net-plain/styles/03_utility.css">
+  <link rel="stylesheet" href="/danielkasai-net-plain/styles/main.css">
+
+  <!-- Every Layout Components -->
+  <link rel="stylesheet" href="/danielkasai-net-plain/styles/every-layout/all.css">
+  <script type="module" src="/danielkasai-net-plain/styles/every-layout/all.js"></script>
+
+  <!-- @stack('styles') -->
+
+  <!-- @stack('head-scripts') -->
+
+</head>
+
+<body>
+
+<header>
+  <box-l borderWidth="0" padding="var(--s-1)" class="bg-clr:turquoise-dark clr:white">
+    <div class="layout__content">
+      <a class="clr:white" href="mailto:mail@danielkasai.net">mail@danielkasai.net</a>
+    </div>
+  </box-l>
+  <box-l borderWidth="0" id="header__main" padding="var(--s0)">
+    <cluster-l justify="space-between" align="center">
+      <a href="/">
+        <img id="header__logo" src="/danielkasai-net-plain/img/header__logo.png" alt="">
+      </a>
+
+      <cluster-l role="list" justify="flex-start" space="var(--s0)">
+        <div role="listitem">
+          <a href="/">Home</a>
+        </div>
+        <div role="listitem">
+          <a href="/vita">Vita</a>
+        </div>
+        <div role="listitem">
+          <a href="/portfolio">Portfolio</a>
+        </div>
+        <div role="listitem">
+          <a href="/impressum">Impressum</a>
+        </div>
+      </cluster-l>
+    </cluster-l>
+  </box-l>
+</header>
+
+<section class="bg-clr:turquoise-bright">
+  <h1 class="clr:white text-align:center">Studium Uni Hamburg</h1>
+</section>
+<section id="vita__overview">
+  <switcher-l limit="3" class="layout__content">
+    <box-l>
+      <stack-l>
+        <div class="text-align:center">
+          <h3>Medienkultur</h3>
+          <p>
+            Seminare zur Medientheorie und -geschichte,
+            Praktische Kurse zu Filmegestaltung
+            und Online-PR,
+            Praktika in TV & Radio
+          </p>
+        </div>
+      </stack-l>
+    </box-l>
+    <box-l>
+      <stack-l>
+        <div class="text-align:center">
+          <h3>Philosophie</h3>
+          <p>
+            Grundlagenkurse zu Argumentationstheorie, Logik & Ethik,
+            Vertiefende Seminare zu Einzelthemen
+            der Philosophie
+          </p>
+        </div>
+      </stack-l>
+    </box-l>
+    <box-l>
+      <stack-l>
+        <div class="text-align:center">
+          <h3>Japanologie</h3>
+          <p>
+            Intensives Sprach- & Schriftstudium,
+            Theorie-Seminare zur
+            Gesellschaft & Geschichte Japans
+          </p>
+        </div>
+      </stack-l>
+    </box-l>
+  </switcher-l>
+</section>
+
+<section id="vita__meiji-gakuin" class="layout__content">
+  <box-l padding="var(--s2)">
+    <box-l class="text-align:center center">
+      <h3>Auslandssemester in Tokyo</h3>
+      <p>Meiji Gakuin Daigaku</p>
+    </box-l>
+  </box-l>
+</section>
+<section class="layout__content bg-clr:yellow text-align:center">
+  <h3>Magisterabschluss</h3>
+  <p>
+    Abschlussarbeit <br>
+    “Medien-Diskurs im kulturellen Kontext. <br>
+    Versuch einer Zusammenführung von Luhmann, Habermas & Foucault”
+  </p>
+</section>
+<section id="vita__hes" class="bg-clr:turquoise-bright text-align:center clr:white margin:top">
+  <h1>Web Technologies Certificate</h1>
+  <p>Harvard Extension School</p>
+</section>
+<section class="layout__content">
+  <p>Das “Web Technologies Certificate” verlangt das Absolvieren von fünf relevanten Kursen der Harvard Extension School mit Mindestnote B.</p>
+  <p class="margin:top">Die <a href="https://extension.harvard.edu/academics/programs/web-technologies-certificate/">Website</a>  beschreibt die Ziele des Studiengangs folgendermaßen:</p>
+
+  <grid-l min="45ch">
+    <sidebar-l>
+      <icon-l>
+        <img src="/danielkasai-net-plain/img/icon__dummy.png" alt="" width="40px">
+      </icon-l>
+      <p>
+        Master the fundamentals of website development, such as HTML5, XHTML, CSS, JavaScript, Ajax, multimedia, HTTP, and scripting languages.
+      </p>
+    </sidebar-l>
+    <sidebar-l>
+      <icon-l>
+        <img src="/danielkasai-net-plain/img/icon__dummy.png" alt="" width="40px">
+      </icon-l>
+      <p>
+        Build dynamic, database-driven web applications, such as use of a LAMP framework (Linux, Apache, MySQL, and PHP) and JavaScript (+ Ajax), among others, to develop robust online programs.
+      </p>
+    </sidebar-l>
+    <sidebar-l>
+      <icon-l>
+        <img src="/danielkasai-net-plain/img/icon__dummy.png" alt="" width="40px">
+      </icon-l>
+      <p>
+        Design, code, publish, market, and monetize mobile apps and games using cross-platform tools.
+      </p>
+    </sidebar-l>
+    <sidebar-l>
+      <icon-l>
+        <img src="/danielkasai-net-plain/img/icon__dummy.png" alt="" width="40px">
+      </icon-l>
+      <p>
+        Implement core concepts of information management, such as data models, database management systems, unstructured and semistructured data management, or parallel and distributed databases.
+      </p>
+    </sidebar-l>
+
+  </grid-l>
+
+</section>
+<section class="layout__content">
+  <box-l borderWidth="0" class="bg-clr:yellow text-align:center margin:bottom">
+    <h2>Meine Kurse</h2>
+  </box-l>
+
+  <stack-l>
+    <switcher-l limit="2">
+      <a href="/danielkasai-net-plain/projects/exploreJapan">
+        <img src="/danielkasai-net-plain/img/vita__hes-courses-fundamentals.png" alt="">
+      </a>
+      <stack-l>
+        <h3>Fundamentals of Web Development</h3>
+        <p>David P. Heitmeyer</p>
+        <p>
+          Description: This course provides a comprehensive overview of website development. Students explore the prevailing vocabulary, tools, and standards used in the field and learn how the various facets—including HTML5, XHTML, CSS, JavaScript, Ajax, multimedia, scripting languages, HTTP, clients, servers, and databases—function together in today’s web environment. The course provides a solid web development foundation, focusing on content and client-side (browser) components (HTML5, XHTML, CSS, JavaScript, multimedia), with an overview of the server-side technologies.
+        </p>
+        <a class="button__border clr:turquoise-dark" href="/danielkasai-net-plain/projects/exploreJapan">Abschlussprojekt: Selbst-geschriebene Website über Japan</a>
+      </stack-l>
+    </switcher-l>
+
+    <switcher-l limit="2">
+
+      <stack-l>
+        <h3>P5 - Creative Explorations on the web</h3>
+        <p>Edmund Anthony Hebert</p>
+        <p>
+          Der Kurs führt in die <a href="https://p5js.org/">Javascript-Bibliothek P5.js</a> ein, die sowohl zur Datenvisualisierung als auch zu kreativen Canvas-Animationen und zur DOM-Manipulation genutzt werden kann.
+          In schrittweisen Vertiefungen werden grundlegende Konzepte der Webprogrammierung (Schleifen, Funktionen, Objekte…) sowie das Formenspektrum der Canvas-Elemente eingeführt.
+          Weiter geht es mit fortgeschrittenen Themen zur API-Kommunikation und zur Bild/Video- & Audio-Manipulation.
+          <br>
+          Projekte: <a href="/danielkasai-net-plain/projects/P5/bauhaus/">Abstrakte Kunst mit P5</a>,
+          <a href="/danielkasai-net-plain/projects/P5/aboutTime/">Visualisierung von Zeit</a>
+        </p>
+        <a class="button__border clr:turquoise-dark" href="/danielkasai-net-plain/projects/P5/finalproject/">Abschlussprojekt "Origins of Philosophy"</a>
+      </stack-l>
+      <a href="/danielkasai-net-plain/projects/P5/finalproject/">
+        <img src="/danielkasai-net-plain/img/vita__hes-courses-p5-creative.png" alt="">
+      </a>
+
+    </switcher-l>
+
+    <switcher-l limit="2">
+      <box-l padding="0" borderWidth="0">
+        <img src="/danielkasai-net-plain/img/vita__hes-courses-laravel.png" alt="">
+      </box-l>
+
+      <stack-l>
+        <h3>Laravel - Dynamic Web Applications</h3>
+        <p>Susan Buck</p>
+        <p>
+          Description: This course is the next step for programmers who are experienced with front-end website development using HTML/CSS and want to learn server-side web application development. At the start of the semester, we set up local and production server environments, managed with Git version control. Next, we explore web application programming using PHP, the dominant server-side language of the web. […]
+          In the second half of the semester we progress into building more advanced applications using the popular PHP framework, Laravel. While working with this framework, we cover topics such as package management, routing, models, views, controllers, environment management, web interface security, databases, and other core web development concepts.
+        </p>
+        <a class="clr:yellow" href="https://github.com/nekoCC01/DWA-Project04">Abschlussprojekt auf Github (CRUD-App für Zitatverwaltung)"</a>
+
+      </stack-l>
+    </switcher-l>
+
+    <switcher-l limit="2">
+
+      <stack-l>
+        <h3>User Experience Engineering</h3>
+        <p>David S. Platt</p>
+        <p>
+          Description: Success in today’s software marketplace requires an excellent user experience (UX). That’s why all developers, architects, and managers today need to understand the basic principles of UX, even if it’s not their primary job. In this course, we take an in-depth look at the foundations of an excellent UX in a platform-agnostic manner. We learn to ask and then answer the vital questions that everyone involved in software needs to consider when making every design decision; we learn to start with the user, not the toolkit. Who are our users and how do we represent them? What problems are these particular users trying to solve, and what would they consider the characteristics of a good solution? How should the user interaction flow, and how can we represent that with stories? How can we prototype and test different designs?…
+          <br><br>
+          <a href="https://docs.google.com/document/d/1lbYyPU9GX-qwGzplmRHSRkvz81IkIekpugleetrICqc/edit">Abschluss-Dokument</a> mit Links zu Präsentations-Video & App-Prototyp
+        </p>
+      </stack-l>
+      <box-l padding="0" borderWidth="0">
+        <img src="/danielkasai-net-plain/img/vita__hes-courses-ux.png" alt="">
+      </box-l>
+
+    </switcher-l>
+
+    <switcher-l limit="2">
+      <box-l padding="0" borderWidth="0">
+        <img src="/danielkasai-net-plain/img/vita__hes-courses-mean.png" alt="">
+      </box-l>
+      <stack-l>
+        <h3>MongoDB, Express, Angular, Node</h3>
+        <p>Laurence P. Bouthillier</p>
+        <p>
+          Description: This course provides an introduction to web application development by way of JavaScript and the node.js environment. Students learn the basics of server-side web development using the MEAN stack (MongoDB, Express.js, Angular/Angular 2, node.js). Using the MEAN stack, the course introduces students to models of software development that can apply to any web development environment, including the application server (node.js), Model View Controller (MVC) frameworks using Express.js, front-end frameworks (Angular), and databases (MongoDB). The course includes setting up a node.js environment, building web APIs and full-stack JavaScript applications using the MEAN stack, and following good application development practices. Experience with server-side application development is not required, though knowledge of client-side web development (HTML/CSS/JavaScript) is important.
+        </p>
+
+      </stack-l>
+    </switcher-l>
+
+  </stack-l>
+
+</section>
+
+
+
+<footer class="bg-clr:darkest clr:white">
+  <section class="layout__content">
+    ©Copyright 2016 / All Rights Reserved <br><br>
+
+    IMPRESSUM: <br>
+    Daniel Kasai <br>
+    22335 Hamburg <br><br>
+
+    Tel.: 040 46777333 <br><br>
+
+    mail@danielkasai.net <br> <br>
+
+    Steuer ID Nr: 41763284096 <br>
+    Steuer Nr: 49/123/01384
+  </section>
+</footer>
+
+<script src="/danielkasai-net-plain/lib/greensock/gsap.min.js"></script>
+<script src="/danielkasai-net-plain/lib/greensock/ScrollTrigger.min.js"></script>
+
+
+</body>
+</html>

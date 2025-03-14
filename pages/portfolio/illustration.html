@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhilosophyWeb - East/West</title>
+
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/00_normalize.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/01_variables.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/02_every_layout.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/03_utility.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/main.css">
+
+    <!-- Every Layout Components -->
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/every-layout/all.css">
+    <script type="module" src="/danielkasai-net-plain/styles/every-layout/all.js"></script>
+
+    <!-- @stack('styles') -->
+
+    <!-- @stack('head-scripts') -->
+
+</head>
+
+<body>
+
+<header>
+    <box-l borderWidth="0" padding="var(--s-1)" class="bg-clr:turquoise-dark clr:white">
+        <div class="layout__content">
+            <a class="clr:white" href="mailto:mail@danielkasai.net">mail@danielkasai.net</a>
+        </div>
+    </box-l>
+    <box-l borderWidth="0" id="header__main" padding="var(--s0)">
+        <cluster-l justify="space-between" align="center">
+            <a href="/">
+                <img id="header__logo" src="/danielkasai-net-plain/img/header__logo.png" alt="">
+            </a>
+
+            <cluster-l role="list" justify="flex-start" space="var(--s0)">
+                <div role="listitem">
+                    <a href="/">Home</a>
+                </div>
+                <div role="listitem">
+                    <a href="/vita">Vita</a>
+                </div>
+                <div role="listitem">
+                    <a href="/portfolio">Portfolio</a>
+                </div>
+                <div role="listitem">
+                    <a href="/impressum">Impressum</a>
+                </div>
+            </cluster-l>
+        </cluster-l>
+    </box-l>
+</header>
+
+<main id="portfolio__illustration">
+    <section class="text-align:center">
+        <h1>Illustrationen</h1>
+        <h2>Eine Auswahl</h2>
+    </section>
+    <section class="layout__content">
+        <switcher-l limit="2" space="0">
+            <box-l padding="0" borderWidth="0">
+                <img src="/danielkasai-net-plain/img/portfolio-illustration__anna-cd.png" alt="">
+            </box-l>
+            <box-l class="flex:centered" padding="0" borderWidth="0">
+                <div class="text-align:center">
+                    <h2>CD</h2>
+                    <a href="https://annaholzhauser.de/">“Departure Time” – Anna Mond</a>
+                    <p>
+                        Digipack, Booklet <br>
+                        Ideenfindung, Illustration & Layout
+                    </p>
+                    <p>
+                        Tools: <br>
+                        Photoshop, Illustrator, InDesign, Procreate
+                    </p>
+                </div>
+            </box-l>
+
+        </switcher-l>
+        <switcher-l limit="2" space="0">
+            <box-l class="flex:centered" padding="0" borderWidth="0">
+                <div class="text-align:center">
+                    <h2>Dinner for one</h2>
+                    <p>
+                        <a href="https://www.hoerzu.de/unterhaltung/aktuelles/dinner-for-one/">Hörzu-Website – Special</a>
+                    </p>
+                    <p>
+                        Illustration für eine Infografik
+                    </p>
+                    <p>
+                        Handzeichnung, Photoshop
+                    </p>
+                </div>
+            </box-l>
+            <box-l padding="0" borderWidth="0">
+                <img src="/danielkasai-net-plain/img/portfolio-illustration__dinner-for-one.png" alt="">
+            </box-l>
+        </switcher-l>
+        <switcher-l limit="2" space="0">
+            <<box-l padding="0" borderWidth="0">>
+            <img src="/danielkasai-net-plain/img/portfolio-illustration__grußkarte-diwemo.png" alt="">
+        </box-l>
+            <box-l class="flex:centered" padding="0" borderWidth="0">
+                <div class="text-align:center">
+                    <h2>Grußkarte</h2>
+                    <a href="https://www.diwemo.de/">Diwemo – das mobile Reisebüro</a>
+                    <p>
+                        Motiv für Weihnachts-Grußkarte
+                    </p>
+                </div>
+            </box-l>
+        </switcher-l>
+        <switcher-l limit="2" space="0">
+            <box-l class="flex:centered" padding="0" borderWidth="0">
+                <div class="text-align:center">
+                    <h2>Teller</h2>
+                    <p>
+                        Brainery – Ideen fürs Leben
+                    </p>
+                    <p>
+                        Handzeichnungen auf Porzellan-Tellern
+                    </p>
+                    <p>
+                        in Zusammenarbeit mit dem <a href="https://www.porzellanfraeulein.de/">Porzellanfräulein</a>
+                    </p>
+                </div>
+            </box-l>>
+            <box-l padding="0" borderWidth="0">
+                <img src="/danielkasai-net-plain/img/portfolio-illustration__mls-geschirr.png" alt="">
+            </box-l>
+        </switcher-l>
+        <switcher-l limit="2" space="0">
+            <box-l padding="0" borderWidth="0">
+                <img src="/danielkasai-net-plain/img/portfolio-illustration__philosophycomics.png" alt="">
+            </box-l>
+            <box-l class="flex:centered" padding="0" borderWidth="0">
+                <div class="text-align:center">
+                    <h2>Philosophie</h2>
+                    <p>
+                        Projekt: Visualisierte Philosophie
+                    </p>
+                    <p>Lebensläufe & Ideen in Bild-Sequenzen</p>
+                </div>
+            </box-l>
+        </switcher-l>
+    </section>
+</main>
+
+
+
+<footer class="bg-clr:darkest clr:white">
+    <section class="layout__content">
+        ©Copyright 2016 / All Rights Reserved <br><br>
+
+        IMPRESSUM: <br>
+        Daniel Kasai <br>
+        22335 Hamburg <br><br>
+
+        Tel.: 040 46777333 <br><br>
+
+        mail@danielkasai.net <br> <br>
+
+        Steuer ID Nr: 41763284096 <br>
+        Steuer Nr: 49/123/01384
+    </section>
+</footer>
+
+<script src="/danielkasai-net-plain/lib/greensock/gsap.min.js"></script>
+<script src="/danielkasai-net-plain/lib/greensock/ScrollTrigger.min.js"></script>
+
+
+</body>
+</html>

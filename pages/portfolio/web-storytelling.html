@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhilosophyWeb - East/West</title>
+
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/00_normalize.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/01_variables.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/02_every_layout.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/03_utility.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/main.css">
+
+    <!-- Every Layout Components -->
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/every-layout/all.css">
+    <script type="module" src="/danielkasai-net-plain/styles/every-layout/all.js"></script>
+
+    <style>
+        .section__parallax-img-container {
+            padding-bottom: 40vh;
+            position: relative;
+        }
+        .section__parallax--inner {
+            background-color: hsl( var(--clr-turquoise-dark) / 50%);
+            position: absolute;
+            z-index: 100;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .section__parallax--inner h1 {
+            font-family: 'Bungee Shade',display;
+            color: white;
+        }
+    </style>
+
+    <!-- @stack('head-scripts') -->
+
+</head>
+
+<body>
+
+<header>
+    <box-l borderWidth="0" padding="var(--s-1)" class="bg-clr:turquoise-dark clr:white">
+        <div class="layout__content">
+            <a class="clr:white" href="mailto:mail@danielkasai.net">mail@danielkasai.net</a>
+        </div>
+    </box-l>
+    <box-l borderWidth="0" id="header__main" padding="var(--s0)">
+        <cluster-l justify="space-between" align="center">
+            <a href="/">
+                <img id="header__logo" src="/danielkasai-net-plain/img/header__logo.png" alt="">
+            </a>
+
+            <cluster-l role="list" justify="flex-start" space="var(--s0)">
+                <div role="listitem">
+                    <a href="/">Home</a>
+                </div>
+                <div role="listitem">
+                    <a href="/vita">Vita</a>
+                </div>
+                <div role="listitem">
+                    <a href="/portfolio">Portfolio</a>
+                </div>
+                <div role="listitem">
+                    <a href="/impressum">Impressum</a>
+                </div>
+            </cluster-l>
+        </cluster-l>
+    </box-l>
+</header>
+
+
+<section class="section__parallax" style="padding: 0;">
+    <div class="section__parallax-img-container">
+        <div class="section__parallax--inner">
+            <h1>WEB-BASIERTES STORYTELLING</h1>
+        </div>
+        <img src="/danielkasai-net-plain/img/portfolio-web-storytelling__background.jpeg" alt="">
+    </div>
+</section>
+
+<section class="bg-clr:turquoise-dark clr:white text-align:center">
+    <stack-l class="layout__content margin:top margin:bottom">
+        <p>
+            In der Harvard Extension School belegte ich den Kurs “Creative Explorations on the web”.
+            Dieser bot mir die Möglichkeit, neue Formen des web-basierten Storytelling zu erkunden.
+        </p>
+        <p>
+            Ziel des Kurses war die Einführung in das Creative-Coding mittels der Javascript-Bibliothek p5.js.
+        </p>
+        <p>
+            Für mein Abschlussprojekt wählte ich eine Kombination aus Timeline- und Map-Visualisierung,
+            die durch die Anfänge der Philosophie-Geschichte führt.
+        </p>
+        <a class="button__border clr:yellow" href="/danielkasai-net-plain/projects/P5/finalproject/">Zum Projekt "Origins of Philosophy"</a>
+
+    </stack-l>
+</section>
+
+<section class="layout__content">
+
+    <switcher-l limit="2">
+        <box-l padding="0" borderWidth="0">
+            <img src="/danielkasai-net-plain/img/portfolio-web-storytelling__interface.png" alt="">
+        </box-l>
+
+        <stack-l>
+            <h2>Rahmenerzählung</h2>
+            <p>
+                Oben rechts führt der begleitende Text in fünf Stationen durch die Entstehungsgeschichte der antiken Philosophie und zielt dabei auf die Erkenntnis, dass Ost und West verbunden sind.
+            </p>
+            <p>
+                Die mittlere Leiste bietet Überblick und erlaubt Vor- und Rücknavigation durch die Stationen.
+            </p>
+        </stack-l>
+    </switcher-l>
+    <switcher-l limit="2">
+
+        <stack-l>
+            <h2>Timeline & Map</h2>
+            <p>
+                Der Kontext wird visualisiert, indem P5 den passenden Kartenaussschnitt zeigt, mitsamt Hervorhebungen und Animationen, sowie den betreffenden Abschnitt der Timeline, mit Einblendung von relevanten Ereignissen.
+            </p>
+            <p>
+                Timeline & Map sind jeweils canvas-Elemente, die im sogenannten <a href="https://github.com/processing/p5.js/wiki/Global-and-instance-mode">InstanceMode</a> von P5 initialisiert, d.h. als abgekapselte Objekte behandelt werden. Innerhalb dieser Elemente steuert P5 Hin- & Rück-Zoom durch scale- und translate-Bewegungen (Vergrößerung & Versetzung).
+            </p>
+        </stack-l>
+        <box-l padding="0" borderWidth="0">
+            <img src="/danielkasai-net-plain/img/portfolio-web-storytelling__map-timeline.png" alt="">
+        </box-l>
+
+    </switcher-l>
+
+    <switcher-l limit="2">
+        <box-l padding="0" borderWidth="0">
+            <img src="/danielkasai-net-plain/img/portfolio-web-storytelling__code.png" alt="">
+        </box-l>
+
+        <stack-l>
+            <h2>Code</h2>
+            <p>
+                Im Hintergrund wird das Geschehen durch fünf Skripte gesteuert:
+            </p>
+            <ul>
+                <li>sketch.js – zur Steuerung des Interfaces, Initialisierung der canvas-Elemente, zum Starten der Zoom-Vorgänge und der Animationen</li>
+                <li>StartScenes.js – zum Übergang von Szene zu Szene</li>
+                <li>map.js – enthält den Code zum Zeichnen der Karte (aus Adobe Illustrator per Skript exportiert und in P5-Code umgewandelt)</li>
+                <li>positioning.js – Durchführen der scale/translate-Bewegungen, Berechnung der Differenz zwischen Start und Ziel</li>
+                <li>BlurbTimespan.js – zur Anzeige der Zusatz-Informationen auf Karte und Zeitleiste</li>
+            </ul>
+        </stack-l>
+    </switcher-l>
+
+</section>
+
+
+<footer class="bg-clr:darkest clr:white">
+    <section class="layout__content">
+        ©Copyright 2016 / All Rights Reserved <br><br>
+
+        IMPRESSUM: <br>
+        Daniel Kasai <br>
+        22335 Hamburg <br><br>
+
+        Tel.: 040 46777333 <br><br>
+
+        mail@danielkasai.net <br> <br>
+
+        Steuer ID Nr: 41763284096 <br>
+        Steuer Nr: 49/123/01384
+    </section>
+</footer>
+
+<script src="/danielkasai-net-plain/lib/greensock/gsap.min.js"></script>
+<script src="/danielkasai-net-plain/lib/greensock/ScrollTrigger.min.js"></script>
+
+<script src="/danielkasai-net-plain/js/parallax.js"></script>
+
+</body>
+</html>

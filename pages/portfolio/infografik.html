@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhilosophyWeb - East/West</title>
+
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/00_normalize.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/01_variables.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/02_every_layout.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/03_utility.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/main.css">
+
+    <!-- Every Layout Components -->
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/every-layout/all.css">
+    <script type="module" src="/danielkasai-net-plain/styles/every-layout/all.js"></script>
+
+    <!-- @stack('styles') -->
+
+    <!-- @stack('head-scripts') -->
+
+</head>
+
+<body>
+
+<header>
+    <box-l borderWidth="0" padding="var(--s-1)" class="bg-clr:turquoise-dark clr:white">
+        <div class="layout__content">
+            <a class="clr:white" href="mailto:mail@danielkasai.net">mail@danielkasai.net</a>
+        </div>
+    </box-l>
+    <box-l borderWidth="0" id="header__main" padding="var(--s0)">
+        <cluster-l justify="space-between" align="center">
+            <a href="/">
+                <img id="header__logo" src="/danielkasai-net-plain/img/header__logo.png" alt="">
+            </a>
+
+            <cluster-l role="list" justify="flex-start" space="var(--s0)">
+                <div role="listitem">
+                    <a href="/">Home</a>
+                </div>
+                <div role="listitem">
+                    <a href="/vita">Vita</a>
+                </div>
+                <div role="listitem">
+                    <a href="/portfolio">Portfolio</a>
+                </div>
+                <div role="listitem">
+                    <a href="/impressum">Impressum</a>
+                </div>
+            </cluster-l>
+        </cluster-l>
+    </box-l>
+</header>
+
+
+<section class="layout__content bg-clr:yellow text-align:center margin:top">
+    <h2>Animierte Infografik zu “Der kleine Lord”</h2>
+</section>
+
+<section class="layout__content">
+    <stack-l>
+        <switcher-l limit="2">
+            <box-l padding="0" borderWidth="0">
+                <img src="/danielkasai-net-plain/img/portfolio-infografik__kleiner-lord.png" alt="">
+            </box-l>
+
+            <stack-l>
+                <h2>Der Auftrag</h2>
+                <p>
+                <ul>
+                    <li>Recherche und Ideenfindung für eine Infografik zu einem beliebten Weihnachtsfilm</li>
+                    <li>Umsetzung mit interaktiven Pop-Ups und Animationen</li>
+                </ul>
+
+                “Der kleine Lord” bot sich als beliebter Familienfilm an. Der Schauplatz des Films: Schloss Belvoir, diente dabei als Aufhänger.
+
+                Denn damit ließ sich eine Infografik kreieren, die den Grundriss des Schlosses um Zusatzinformationen zu einzelnen Räumen ergänzt. Per Klick öffnen sich Pop-Ups mit Infos und animierten Bildern.
+                </p>
+            </stack-l>
+        </switcher-l>
+        <switcher-l limit="2">
+            <stack-l>
+                <h2>Umsetzung</h2>
+                <p>
+                    Die einzelnen Bilder hab ich – teils perspektivisch – in Illustrator erzeugt, basierend auf Handskizzen und Fotovorlagen.
+                    <br>
+                    AfterEffects nutzte ich, um Animationen hinzuzufügen und GIF-Dateien zu erzeugen. Diese ließen sich dann in Adobe Muse importieren, ein Programm zur schnellen Webseiten-Erstellung.
+                    <br>
+                    In Muse setzte ich alle Teile zusammen und baute die Klick-Animationen.
+                    Heute würde ich das vorzugsweise selbst programmieren, um mehr Gestaltungsfreiheit zu haben und leichter wartbaren Code zu erzeugen.
+                </p>
+            </stack-l>
+            <box-l padding="0" borderWidth="0">
+                <img src="/danielkasai-net-plain/img/portfolio-infografik__illustrator-lord.png" alt="">
+            </box-l>
+
+        </switcher-l>
+    </stack-l>
+</section>
+
+
+
+<section class="layout__content">
+    <box-l padding="var(--s2)">
+        <box-l class="text-align:center center" borderWidth="0">
+            <a class="button__border clr:turquoise-dark" href="/danielkasai-net-plain/projects/LittleLord">Zur Infografik</a>
+        </box-l>
+    </box-l>
+</section>
+
+<section class="layout__content bg-clr:turquoise-bright text-align:center margin:top">
+    <h2>Infografik zur Flüchtlingskrise</h2>
+</section>
+
+<section class="layout__content">
+    <stack-l>
+        <switcher-l limit="2">
+            <box-l padding="0" borderWidth="0">
+                <img src="/danielkasai-net-plain/img/portfolio-infografik__hoerzu-screenshot.png" alt="">
+            </box-l>
+
+            <stack-l>
+                <h2>Der Auftrag</h2>
+                <p>
+                <ul>
+                    <li>Recherche zu aktuellen politischen Themen</li>
+                    <li> Ideenfindung und Umsetzung einer Infografik</li>
+                </ul>
+                </p>
+            </stack-l>
+        </switcher-l>
+        <switcher-l limit="2">
+            <stack-l>
+                <h2>Umsetzung</h2>
+                <p>
+
+
+                    Die Herausforderung bestand hier in der Verdichtung eines komplexen Themas – hier: die Flüchtlingskrise –  auf wenige Aussagen, Zahlen und grafische Elemente.
+                    <br>
+                    Die meiste Zeit kostete die Recherche: Durchsicht von Zeitungsartikeln, Studieren des dahinterliegenden Quellenmaterials und Vergleich der Statistiken.
+                    <br>
+                    Ich wählte Illustrator für die Umsetzung des Designs, da hier der Umgang mit geometrischen Formen einfacher ist als in Photoshop.
+
+                </p>
+            </stack-l>
+            <box-l padding="0" borderWidth="0">
+                <img src="/danielkasai-net-plain/img/portfolio-infografik__illustrator-hz-grafik.png" alt="">
+            </box-l>
+
+        </switcher-l>
+    </stack-l>
+</section>
+
+<section class="layout__content">
+    <box-l padding="var(--s2)">
+        <box-l class="text-align:center center" borderWidth="0">
+            <a class="button__border clr:turquoise-dark" href="/danielkasai-net-plain/img/portfolio-infografik__grafik-fluechtlingskrise.jpeg">Zur Infografik</a>
+        </box-l>
+    </box-l>
+</section>
+
+
+
+
+<footer class="bg-clr:darkest clr:white">
+    <section class="layout__content">
+        ©Copyright 2016 / All Rights Reserved <br><br>
+
+        IMPRESSUM: <br>
+        Daniel Kasai <br>
+        22335 Hamburg <br><br>
+
+        Tel.: 040 46777333 <br><br>
+
+        mail@danielkasai.net <br> <br>
+
+        Steuer ID Nr: 41763284096 <br>
+        Steuer Nr: 49/123/01384
+    </section>
+</footer>
+
+<script src="/danielkasai-net-plain/lib/greensock/gsap.min.js"></script>
+<script src="/danielkasai-net-plain/lib/greensock/ScrollTrigger.min.js"></script>
+
+
+</body>
+</html>

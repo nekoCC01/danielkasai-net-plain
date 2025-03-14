@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhilosophyWeb - East/West</title>
+
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/00_normalize.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/01_variables.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/02_every_layout.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/03_utility.css">
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/main.css">
+
+    <!-- Every Layout Components -->
+    <link rel="stylesheet" href="/danielkasai-net-plain/styles/every-layout/all.css">
+    <script type="module" src="/danielkasai-net-plain/styles/every-layout/all.js"></script>
+
+    <style>
+        .section__parallax-img-container {
+            padding-bottom: 60vh;
+        }
+        frame-l > iframe {
+            inline-size: 100%;
+            block-size: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+    <!-- @stack('head-scripts') -->
+
+</head>
+
+<body>
+
+<header>
+    <box-l borderWidth="0" padding="var(--s-1)" class="bg-clr:turquoise-dark clr:white">
+        <div class="layout__content">
+            <a class="clr:white" href="mailto:mail@danielkasai.net">mail@danielkasai.net</a>
+        </div>
+    </box-l>
+    <box-l borderWidth="0" id="header__main" padding="var(--s0)">
+        <cluster-l justify="space-between" align="center">
+            <a href="/">
+                <img id="header__logo" src="/danielkasai-net-plain/img/header__logo.png" alt="">
+            </a>
+
+            <cluster-l role="list" justify="flex-start" space="var(--s0)">
+                <div role="listitem">
+                    <a href="/">Home</a>
+                </div>
+                <div role="listitem">
+                    <a href="/vita">Vita</a>
+                </div>
+                <div role="listitem">
+                    <a href="/portfolio">Portfolio</a>
+                </div>
+                <div role="listitem">
+                    <a href="/impressum">Impressum</a>
+                </div>
+            </cluster-l>
+        </cluster-l>
+    </box-l>
+</header>
+
+
+<section class="bg-clr:turquoise-dark">
+    <frame-l class="layout__content">
+        <iframe src="https://www.youtube.com/embed/h8IdTTeN2qM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </frame-l>
+</section>
+
+<section class="bg-clr:darkest section__h1 clr:white text-align:center">
+    <h1>Animation</h1>
+    <h2>zur Ausstellung "Hokusai Manga" im Museum für Kunst und Gewerbe</h2>
+</section>
+
+<section class="layout__content">
+    <stack-l>
+        <switcher-l limit="2">
+            <box-l padding="0" borderWidth="0">
+                <img src="/danielkasai-net-plain/img/portfolio-mkg__hokusai-welle.jpeg" alt="">
+            </box-l>
+
+            <stack-l>
+                <h2>Auftrag</h2>
+                <p>
+                    Die Ausstellung “Hokusai Manga”des <a href="https://www.mkg-hamburg.de/">Museums für Kunst und Gewerbe</a> zeigte japanische Farbholzschnitte des 19.Jahrhunderts neben modernen Formen der Bildkommunikation wie Manga, Anime und Virtual Reality.
+                    <br>
+                    Für den Eingangsbereich sollte ich eine Animation erstellen, die auf Großleinwand gezeigt wird. Geisterszenen des Farbholzschnitt-Künstlers
+                    <a href="https://de.wikipedia.org/wiki/Kawanabe_Ky%C5%8Dsai">Kawanabe Kyosai</a> wurden dabei zu neuem Leben erweckt.
+                    <br>
+
+                    Zusätzlich animierte ich Studien aus den Skizzenbüchern von <a href="https://de.wikipedia.org/wiki/Katsushika_Hokusai">Katsushita Hokusai</a>.
+                </p>
+            </stack-l>
+        </switcher-l>
+        <switcher-l limit="2">
+            <stack-l>
+                <h2>Hintergrund</h2>
+                <p>
+                    Die Kyosai-Holzschnitte “Bildergeschichten zu den hundert Dämonen” (1890)” sind als Leporello gedacht – also als Bilderreihe zum Aufklappen.
+                    <br>
+                    Sie zeigen eine japanische Adelsgesellschaft, die – nach dem Teetrinken – das Licht löscht und die Wesen der Geisterwelt (Yōkai (jap. 妖怪) ) heraufbeschwört.
+                    <br>
+                    Daraufhin erscheint ein Reigen grotesker Gestalten und verschwindet wieder mit dem Anbruch der Morgensonne.
+                </p>
+            </stack-l>
+            <box-l padding="0" borderWidth="0">
+                <img src="/danielkasai-net-plain/img/portfolio-mkg__kyosai-leporello.png" alt="">
+            </box-l>
+
+        </switcher-l>
+        <switcher-l limit="2">
+            <box-l padding="0" borderWidth="0">
+                <video controls src="/danielkasai-net-plain/img/portfolio-mkg__video-erste-studien.mp4" alt=""></video>
+            </box-l>
+
+            <stack-l>
+                <h2>Erste Studien</h2>
+                <p>
+                    Ich begann mit Studien zur Simulation natürlicher Bewegungen.
+                    <br>
+                    Es wurde jedoch dann entschieden, näher am Original zu bleiben, um den Charakter der Figuren zu erhalten.
+                    <br>
+                    Da Geschichten dieser Art teils auch als Bilderrolle verkauft wurden, sollte eine Fließbewegung von links nach rechts simuliert werden.
+                </p>
+            </stack-l>
+        </switcher-l>
+        <switcher-l limit="2">
+            <stack-l>
+                <h2>Umsetzung</h2>
+                <p>
+                    Ich nutzte Photoshop zur Präparation der Bilder: um Bewegungen der Gliedmaßen zu ermöglichen, mussten diese vom Hintergrund gelöst und auf Ebenen isoliert werden. Teile der Bilder sowie der komplette Hintergrund mussten nachgezeichnet werden.
+                    <br>
+                    Die einzelnen Bilder habe ich dann in AfterEffects animiert (als Einzel-compositions) und innerhalb einer Master-Composition zusammenmontiert. So konnte die “Rollen”-Bewegung an einer zentralen Stelle justiert und durch Verkettung auf alle Szenen übertragen werden.
+                </p>
+            </stack-l>
+            <box-l padding="0" borderWidth="0">
+                <img src="/danielkasai-net-plain/img/portfolio-mkg__after-effects-screenshot.png" alt="">
+            </box-l>
+
+        </switcher-l>
+    </stack-l>
+</section>
+
+<section class="bg-clr:darkest section__h1 clr:white text-align:center">
+    <h2>Animation der Hokusai-Skizzen</h2>
+</section>
+
+<section class="bg-clr:turquoise-dark">
+    <frame-l class="layout__content">
+        <iframe src="https://www.youtube.com/embed/XRJSzImuTmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </frame-l>
+</section>
+
+
+<footer class="bg-clr:darkest clr:white">
+    <section class="layout__content">
+        ©Copyright 2016 / All Rights Reserved <br><br>
+
+        IMPRESSUM: <br>
+        Daniel Kasai <br>
+        22335 Hamburg <br><br>
+
+        Tel.: 040 46777333 <br><br>
+
+        mail@danielkasai.net <br> <br>
+
+        Steuer ID Nr: 41763284096 <br>
+        Steuer Nr: 49/123/01384
+    </section>
+</footer>
+
+<script src="/danielkasai-net-plain/lib/greensock/gsap.min.js"></script>
+<script src="/danielkasai-net-plain/lib/greensock/ScrollTrigger.min.js"></script>
+
+
+</body>
+</html>
