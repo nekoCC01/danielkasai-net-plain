@@ -75,11 +75,11 @@ var sketch_map = function (p) {
     p.images = [];
 
     p.preload = function () {
-        p.images[0] = p.loadImage("/danielkasai-net-plain/projects/P5/finalproject/img/thales.png");
-        p.images[1] = p.loadImage("/danielkasai-net-plain/projects/P5/finalproject/img/dareiosI.png");
-        p.images[2] = p.loadImage("/danielkasai-net-plain/projects/P5/finalproject/img/IndianPhilosopher.png");
-        p.images[3] = p.loadImage("/danielkasai-net-plain/projects/P5/finalproject/img/plato.png");
-        p.images[4] = p.loadImage("/danielkasai-net-plain/projects/P5/finalproject/img/buddha.png");
+        p.images[0] = p.loadImage("/projects/P5/finalproject/img/thales.png");
+        p.images[1] = p.loadImage("/projects/P5/finalproject/img/dareiosI.png");
+        p.images[2] = p.loadImage("/projects/P5/finalproject/img/IndianPhilosopher.png");
+        p.images[3] = p.loadImage("/projects/P5/finalproject/img/plato.png");
+        p.images[4] = p.loadImage("/projects/P5/finalproject/img/buddha.png");
     }
 
 
@@ -640,7 +640,7 @@ var sketch_timeline = function (p) {
 
 
     p.preload = function () {
-        p.images[0] = p.loadImage("/danielkasai-net-plain/projects/P5/finalproject/img/thales.png");
+        p.images[0] = p.loadImage("/projects/P5/finalproject/img/thales.png");
     }
 
     p.setup = function () {
